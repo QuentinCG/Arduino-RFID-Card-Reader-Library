@@ -1,0 +1,6 @@
+RFIDCardReader	KEYWORD1
+getInstance	KEYWORD1
+init	KEYWORD2
+getLastCard	KEYWORD2
+resetLastCard	KEYWORD2
+attachFunctionToCardDetectionEvent	KEYWORD2
