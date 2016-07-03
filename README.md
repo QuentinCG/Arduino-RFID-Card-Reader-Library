@@ -24,19 +24,18 @@ This library has been tested with 125KHz devices but it should be usable with an
 
 RFID Card Readers have a lot of pins but only 5 are really important:
 
-RFID Card Reader | Arduino | Antenna
--------- | -------- | /
-VCC      | 5V        | /
-GND      | GND       | /
-Tx       | Rx (For Arduino Mega, use Rx1) | /
-Antenna - | /        | One of the two wire
-Antenna + | /        | One of the two wire
+RFID Card Reader | Arduino
+-------- | --------
+VCC      | 5V
+GND      | GND
+Tx       | Rx (For Arduino Mega, use Rx1)
 
-
-Important note: Since Arduino Mega supports 3 UART channels, it is possible to select the one you want by changing "RFIDCardReaderPort1" by "RFIDCardReaderPort2" or "RFIDCardReaderPort3" in <a href="https://github.com/QuentinCG/Arduino-RFID-Card-Reader-Library/blob/master/RFIDCardReader/RFIDCardReader.h">RFIDCardReader.h</a>
-
+On most RFID card reader, it is also needed to attach antenna pins to your antenna.
 
 <img src="schematics.png" width="600">
+
+
+Important note: Since Arduino Mega supports 3 UART channels, it is possible to select the one you want by changing "RFIDCardReaderPort1" to "RFIDCardReaderPort2" or "RFIDCardReaderPort3" in <a href="https://github.com/QuentinCG/Arduino-RFID-Card-Reader-Library/blob/master/RFIDCardReader/RFIDCardReader.h">RFIDCardReader.h</a>.
 
 
 ## Examples
