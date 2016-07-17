@@ -3,7 +3,7 @@
 ## What is it?
 
 This library (with examples) is designed to be integrated in projects using RFID Card or Tag reader.
-It retrieves the card ID. It is also possible to attach your own function to be launched when every time a card or tag is detected (asynchronously with interrupt).
+It retrieves the card ID. It is also possible to attach your own function to be launched every time a card or tag is detected (asynchronously with interrupt).
 
 This library has been tested with 125KHz devices but it should be usable with any kind of RFID Card reader.
 
