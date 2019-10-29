@@ -115,25 +115,25 @@ void RFIDCardReader::_oneCharReceived(char in_char)
 
 #if defined(HAVE_HWSERIAL1) && defined(RFIDCardReaderPort1) // Arduino MEGA Only: UART 1
 void serialEvent1() {
-  while (Serial1.available()) {
+  while (Serial1.available() > 0) {
     RFIDCardReader::getInstance()->_oneCharReceived((char)Serial1.read());
   }
 }
 #elif defined(HAVE_HWSERIAL0) && defined(RFIDCardReaderPort1) // All Arduino: UART 0
 void serialEvent() {
-  while (Serial.available()) {
+  while (Serial.available() > 0) {
     RFIDCardReader::getInstance()->_oneCharReceived((char)Serial.read());
   }
 }
 #elif defined(HAVE_HWSERIAL2) && defined(RFIDCardReaderPort2) // Arduino MEGA Only: UART 2
 void serialEvent2() {
-  while (Serial2.available()) {
+  while (Serial2.available() > 0) {
     RFIDCardReader::getInstance()->_oneCharReceived((char)Serial2.read());
   }
 }
 #elif defined(HAVE_HWSERIAL3) && defined(RFIDCardReaderPort3) // Arduino MEGA Only: UART 3
 void serialEvent3() {
-  while (Serial3.available()) {
+  while (Serial3.available() > 0) {
     RFIDCardReader::getInstance()->_oneCharReceived((char)Serial3.read());
   }
 }
