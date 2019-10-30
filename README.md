@@ -40,10 +40,10 @@ Two examples are provided with this library:
 
 ### Check if a tag or card has been detected every second (synchronous)
 
-<a target="_blank" href="https://github.com/QuentinCG/Arduino-RFID-Card-Reader-Library/blob/master/RFIDCardReader/examples/BasicRFIDCardReader/BasicRFIDCardReader.ino">Link to source code</a>
+<a target="_blank" href="https://github.com/QuentinCG/Arduino-RFID-Card-Reader-Library/blob/master/examples/BasicRFIDCardReader/BasicRFIDCardReader.ino">Link to source code</a>
 
 ### Show tag or card when detected (asynchronous with interrupt)
-<a target="_blank" href="https://github.com/QuentinCG/Arduino-RFID-Card-Reader-Library/blob/master/RFIDCardReader/examples/RFIDCardReaderWithInterrupt/RFIDCardReaderWithInterrupt.ino">Link to source code</a>
+<a target="_blank" href="https://github.com/QuentinCG/Arduino-RFID-Card-Reader-Library/blob/master/examples/RFIDCardReaderWithInterrupt/RFIDCardReaderWithInterrupt.ino">Link to source code</a>
 
 ## License
 
