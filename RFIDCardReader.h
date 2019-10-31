@@ -22,6 +22,8 @@
 //#define RFIDCardReaderPort2 // Usable only with Arduino MEGA
 //#define RFIDCardReaderPort3 // Usable only with Arduino MEGA
 
+#define TrySerialAnyway // Force serial port to "Serial" if none found
+
 class HardwareSerial;
 
 class RFIDCardReader

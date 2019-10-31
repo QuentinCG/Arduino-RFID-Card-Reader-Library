@@ -39,6 +39,8 @@ RFIDCardReader::RFIDCardReader() :
     _serial = &Serial2;
   #elif defined(HAVE_HWSERIAL3) && defined(RFIDCardReaderPort3)
     _serial = &Serial3;
+  #elif defined(TrySerialAnyway)
+    _serial = &Serial;
   #else
     ERROR, PLEASE DEFINE AT LEAST ONE CORRECT RFIDCardReaderPort IN RFIDCardReader.h
   #endif
@@ -135,6 +137,12 @@ void serialEvent2() {
 void serialEvent3() {
   while (Serial3.available() > 0) {
     RFIDCardReader::getInstance()->_oneCharReceived((char)Serial3.read());
+  }
+}
+#elif defined(TrySerialAnyway)
+void serialEvent() {
+  while (Serial.available() > 0) {
+    RFIDCardReader::getInstance()->_oneCharReceived((char)Serial.read());
   }
 }
 #else
