@@ -3,10 +3,11 @@ sudo: false
 
 env:
   global:
-  - PRETTYNAME="Hygrometer Sensor (Rain Drop and Soil Moisture)"
+  - PRETTYNAME="RFID Card reader"
 
 before_install:
 - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
 
 script:
+- export MAIN_PLATFORMS='declare -A main_platforms=( [uno]="arduino:avr:uno" [mega2560]="arduino:avr:mega:cpu=atmega2560" )'
 - build_main_platforms
