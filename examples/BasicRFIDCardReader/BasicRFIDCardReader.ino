@@ -16,14 +16,17 @@ static void checkRFIDCardID()
 {
   unsigned long ms_since_card_found;
   String data;
-  if (card_reader->getLastCard(data, ms_since_card_found, true /*change this to false to keep card ID in memory when you got it*/)) {
+  if (card_reader->getLastCard(data, ms_since_card_found, true /*change this to false to keep card ID in memory when you got it*/))
+  {
     //card_reader->resetLastCard();
     Serial.print("Card detected: ");
     Serial.print(data);
     Serial.print(" (time since card was found: ");
     Serial.print(ms_since_card_found/1000);
     Serial.print(" sec)\n");
-  } else {
+  }
+  else
+  {
     Serial.print("No card detected\n");
   }
 }
