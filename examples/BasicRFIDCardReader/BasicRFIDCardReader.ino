@@ -2,9 +2,9 @@
  * \brief Check latest RFID card ID every second (synchronous)
  *
  * \author Quentin Comte-Gaz <quentin@comte-gaz.com>
- * \date 2 July 2016
+ * \date 27 December 2021
  * \license MIT License (contact me if too restrictive)
- * \copyright Copyright (c) 2016 Quentin Comte-Gaz
+ * \copyright Copyright (c) 2021 Quentin Comte-Gaz
  * \version 1.0
  */
 
