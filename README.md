@@ -32,7 +32,7 @@ On most RFID card reader, it is also needed to attach antenna pins to your anten
 
 <img src="schematics.png" width="600">
 
-Important note: Since Arduino Mega supports 3 UART channels, it is possible to select the one you want by changing "RFIDCardReaderPort1" to "RFIDCardReaderPort2" or "RFIDCardReaderPort3" in <a href="https://github.com/QuentinCG/Arduino-RFID-Card-Reader-Library/blob/master/RFIDCardReader/RFIDCardReader.h">RFIDCardReader.h</a>.
+Important note: Since Arduino Mega supports 3 UART channels, it is possible to select the one you want by changing "RFIDCardReaderPort1" to "RFIDCardReaderPort2" or "RFIDCardReaderPort3" in <a href="https://github.com/QuentinCG/Arduino-RFID-Card-Reader-Library/blob/master/RFIDCardReader.h#L20">RFIDCardReader.h</a>.
 
 ## Examples
 
